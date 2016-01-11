@@ -1,0 +1,36 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<link href="~/StyleSheet.css" rel="Stylesheet" type="text/css" />
+    <title>Master PAge</title>
+     <center>
+           <asp:Image ID="Banner" ImageAlign="Top"
+                ImageUrl ="~/Images/MyBannerMaker_Banner.png" runat="server" Height="126px" 
+                Width="1272px" />
+                <br />
+                <br />
+                </center>
+        <center>
+        <asp:Label ID="label" Text="A virtual social gathering place" runat="server" 
+         Font-Bold="True" style ="text-align:center;" BorderStyle="Double"></asp:Label>
+         </center>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+      
+                </asp:ContentPlaceHolder>
+         <asp:ContentPlaceHolder ID ="ContentPlaceHolder2" runat="server">
+          
+         
+         </asp:ContentPlaceHolder>      
+         
+                
+    </div>
+    </form>
+</body>
+</html>
