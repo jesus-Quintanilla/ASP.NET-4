@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class _Default : System.Web.UI.Page
+{
+    int holdScore = 0;
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+    protected void ButtonSumitAnswer_Click(object sender, EventArgs e)
+    {
+        if (RadioButtonList1.SelectedItem.Text == "Augusta")
+        {
+            LabelResponse.Text = "Correct!";
+            holdScore++;
+        }
+        else
+        {
+            LabelResponse.Text = "Incorrect.";
+        }
+
+    }
+    protected void ButtonResponse1_Click(object sender, EventArgs e)
+    {
+        if (DropDownList1.SelectedItem.Text == "Aglet")
+        {
+            LabelCorrect1.Text = "Correct!";
+            holdScore++;
+        }
+        else
+        {
+            LabelCorrect1.Text = "Incorrect.";
+        }
+
+    }
+}
