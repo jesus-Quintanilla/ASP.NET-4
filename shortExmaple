@@ -1,0 +1,47 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body bgcolor ="#99ff33" style="height: 1077px">
+    <form id="form1" runat="server">
+    <div>
+    <h1 align ="center"><font color = "maroon"><big><strong>Welcome test your skills in this three part Quiz!</strong></big></font></h1><br />
+    <br />
+    <br />
+    <br />
+    <h3 align = "left">What is the capital of Maine?<asp:RadioButtonList 
+            ID="RadioButtonList1" runat="server">
+        <asp:ListItem>Maine</asp:ListItem>
+        <asp:ListItem>Sacramento</asp:ListItem>
+        <asp:ListItem>Augusta</asp:ListItem>
+        <asp:ListItem>Mars</asp:ListItem>
+        </asp:RadioButtonList>
+        <asp:Button ID="ButtonSumitAnswer" runat="server" 
+            onclick="ButtonSumitAnswer_Click" Text="Submit" />
+        <asp:Label ID="LabelResponse" runat="server"></asp:Label>
+        </h3>
+        <h3 align = "left">What is the Plastic part of a shoelace called?</h3>
+        <asp:DropDownList ID="DropDownList1" runat="server">
+            <asp:ListItem Value="shaft">Shaft</asp:ListItem>
+            <asp:ListItem>Cork</asp:ListItem>
+            <asp:ListItem>Pepcid</asp:ListItem>
+            <asp:ListItem>Aglet</asp:ListItem>
+            <asp:ListItem>Plastic</asp:ListItem>
+        </asp:DropDownList>
+        <br />
+        <asp:Button ID="ButtonResponse1" runat="server" onclick="ButtonResponse1_Click" 
+            Text="Submit" />
+        <asp:Label ID="LabelCorrect1" runat="server"></asp:Label>
+        <br />
+        <br />
+        <br />
+        <h3 align = "left">Solve for (x):&nbsp; (2x-4)^2 + 21 = 85</h3>
+        <p align = "left">&nbsp;</p><br />
+    </div>
+    </form>
+</body>
+</html>
